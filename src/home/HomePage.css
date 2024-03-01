@@ -1,0 +1,195 @@
+.carousel {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 700px; 
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  
+  .controls button {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+  }
+  
+  .indicators .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    border-radius: 100%;
+  }
+  
+  .indicators .indicator.active:nth-child(1) {
+    background-color: white; 
+  }
+  
+  .indicators .indicator.active:nth-child(2) {
+    background-color: green;
+  }
+  
+  .indicators .indicator.active:nth-child(3) {
+    background-color: red;
+  }
+  
+  .indicators .indicator.active:nth-child(4) {
+    background-color: blue;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    padding: 10px; 
+    backdrop-filter: blur(5px); 
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+  }
+  .slides.image{
+    width: 100%; /* Mengisi lebar carousel */
+    height: 100%; /* Mengisi tinggi carousel */
+    object-fit: cover; 
+  }
+  
+  
+  h1{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  h2{
+    text-align: center;
+    padding-right: 30px;
+    padding-top: 2vh;
+    color: #b30a0a;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan konten untuk wrapping ke baris berikutnya */
+    justify-content: center; /* Menengahkan konten secara horizontal */
+    background-color: white; /* Latar belakang putih */
+    padding: 20px; /* Menambahkan padding agar konten tidak terlalu dekat dengan tepi container */
+  }
+  
+  .menu-item {
+    flex: 0 0 calc(27.33% - 2px); /* Mengatur lebar tiap gambar agar tiga gambar bisa muat dalam satu baris */
+    margin: 10px; /* Jarak antara gambar */
+    box-sizing: border-box; /* Menyertakan padding dan border dalam perhitungan lebar */
+    padding-left: 15px;
+  }
+  
+  .menu-item img {
+    width: 90%; /* Mengisi lebar dari parent container */
+    height: auto; /* Mengatur tinggi gambar secara otomatis sesuai dengan lebar */
+    border-radius: 5px; 
+  }
+  
+  
+  .menugokil .btn {
+    margin-top: 20px; /* Menambahkan jarak atas */
+    display: inline-block; /* Mengubah tautan menjadi elemen blok */
+    width: 20%;
+  }
+  
+
+  .menugokil{
+    background-color: white;
+    margin: 10vh;
+    text-align: center;
+  }
+
+  .gmaps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Sesuaikan dengan tinggi halaman */
+  }
+  
+  .footer {
+    background-color: #ffffff; /* Warna latar belakang putih */
+    padding: 20px; /* Padding di dalam footer */
+    margin-top: 15vh; /* Jarak antara footer dan konten di atasnya */
+    font-style: bold;
+  }
+  
+  .footer-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Jarak antara daftar item footer dan garis pemisah */
+    font-style: bold;
+  }
+  
+  .footer-item {
+    margin: 0 10px; /* Jarak antara item footer */
+  }
+  
+  .footer-item a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #000000; /* Warna teks */
+  }
+  
+  .footer-line {
+    height: 1px; /* Ketebalan garis */
+    background-color: #000000; /* Warna garis */
+    margin-bottom: 10px; /* Jarak antara garis dan teks copyright */
+  }
+  
+  .footer-copyright {
+    text-align: center; /* Pusatkan teks */
+    font-style: bold;
+  }
+  
